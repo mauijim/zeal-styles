@@ -7,6 +7,17 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
+
+<!--
+  We recommend importing each of these individual files, and using the style mixins
+available in each ones, rather than the aggregated `paper-styles.html` as a whole.
+
+@group Zeal Elements
+@pseudoElement zeal-styles
+@demo demo/index.html
+-->
+
+<link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="zeal-typography/zeal-typography.html">
 
 <style is="custom-style">
@@ -36,11 +47,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     h3 {
-      @apply(--zeal-font-headline-2);
+      @apply(--zeal-font-headline-3);
     }
 
     h4 {
-      @apply(--zeal-font-headline-2);
+      @apply(--zeal-font-headline-4);
     }
 
     small {
