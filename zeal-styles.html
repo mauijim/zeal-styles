@@ -20,13 +20,11 @@ available in each ones, rather than the aggregated `paper-styles.html` as a whol
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="zeal-typography/zeal-typography.html">
 
-<style is="custom-style">
+<dom-module id="zeal-styles">
+  <template>
+    <style>
 
-  :root {
-
-  }
-
-  html {font-size: 16px;}
+    html {font-size: 16px;}
 
     body {
       background-color: white;
@@ -58,4 +56,6 @@ available in each ones, rather than the aggregated `paper-styles.html` as a whol
       @apply(--zeal-font-small);
     }
 
-</style>
+    </style>
+  </template>
+</dom-module>
