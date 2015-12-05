@@ -18,7 +18,8 @@ available in each ones, rather than the aggregated `paper-styles.html` as a whol
 -->
 
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="zeal-typography/zeal-typography.html">
+<link rel="import" href="zeal-color.html">
+<link rel="import" href="zeal-typography.html">
 
 <dom-module id="zeal-styles">
   <template>
@@ -28,7 +29,7 @@ available in each ones, rather than the aggregated `paper-styles.html` as a whol
 
     body {
       background-color: white;
-      color: #252525;
+      color: var(--zeal-color-charcoal);
       @apply(--zeal-font-body);
     }
 
@@ -54,6 +55,14 @@ available in each ones, rather than the aggregated `paper-styles.html` as a whol
 
     small {
       @apply(--zeal-font-small);
+    }
+
+    a {
+      color: var(--zeal-color-sapphire);
+    }
+
+    button, .button, a.secondary {
+      color: var(--zeal-color-blood-orange);
     }
 
     </style>
